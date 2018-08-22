@@ -80,6 +80,15 @@ function asset_path($asset)
 }
 
 /**
+ * @param $asset
+ * @return string
+ */
+function asset_path_parent($asset)
+{
+    return sage('assets_parent')->getUri($asset);
+}
+
+/**
  * @param string|string[] $templates Possible template files
  * @return array
  */

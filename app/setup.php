@@ -110,6 +110,9 @@ add_action('after_setup_theme', function () {
     sage()->singleton('sage.assets', function () {
         return new JsonManifest(config('assets.manifest'), config('assets.uri'));
     });
+    sage()->singleton('sage.assets_parent', function () {
+        return new JsonManifest(config('assets_parent.manifest_parent'), config('assets_parent.uri_parent'));
+    });
 
     /**
      * Add Blade to Sage container

@@ -15,6 +15,7 @@ return [
     */
 
     'manifest' => get_theme_file_path().'/dist/assets.json',
+    'manifest_parent' => get_parent_theme_file_path().'/dist/assets.json',
 
     /*
     |--------------------------------------------------------------------------
@@ -28,4 +29,5 @@ return [
     */
 
     'uri' => get_theme_file_uri().'/dist',
+    'uri_parent' => get_parent_theme_file_path().'/dist',
 ];
