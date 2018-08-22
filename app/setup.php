@@ -11,9 +11,9 @@ use Roots\Sage\Template\BladeProvider;
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
-    wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
+    wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), ['sage/parent/main.css'], null);
     wp_enqueue_style('sage/parent/main.css', str_replace('app/public/', '', asset_path_parent('styles/main.css')), false, null);
-    wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+    wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery', 'sage/parent/main.js'], null, true);
     wp_enqueue_script('sage/parent/main.js', str_replace('app/public/', '', asset_path_parent('scripts/main.js')), ['jquery'], null, true);
 
     if (is_single() && comments_open() && get_option('thread_comments')) {
