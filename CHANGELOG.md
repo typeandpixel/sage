@@ -1,3 +1,14 @@
+### 9.0.5: September 17th, 2018
+* Workaround for Bootstrap incompatibility with webpack. Fixes #2017 ([e72b490](https://github.com/roots/sage/commit/e72b4906264551dc00cd0890de74ae2bce0d77c8))
+
+### 9.0.4: September 7th, 2018
+* Force `illuminate/support` to `5.6.*` ([#2112](https://github.com/roots/sage/pull/2112))
+
+### 9.0.3: September 7th, 2018
+* Revert "Add searchform partial and function to replace default WordPress functionality" ([#2110](https://github.com/roots/sage/pull/2110))
+* Unescape get_language_attributes() ([#2108](https://github.com/roots/sage/pull/2108))
+* Add data from controller to comments template ([#2100](https://github.com/roots/sage/pull/2100))
+
 ### 9.0.2: August 21st, 2018
 * Update to Bootstrap 4.1.3 ([#2097](https://github.com/roots/sage/pull/2097))
 * Comments template fix ([#2095](https://github.com/roots/sage/pull/2095))
