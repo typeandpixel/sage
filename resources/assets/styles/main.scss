@@ -11,15 +11,21 @@
  */
 // @import "~some-node-module";
 
+/** Import UIkit */
+// 1. Your custom variables and variable overwrites.
+@import "./uikit/variables/**/*";
+
+// 2. Import default variables and available mixins.
+@import "~uikit/src/scss/variables";
+@import "~uikit/src/scss/mixins";
+
+// 3. Your custom mixin overwrites.
+@import "./uikit/mixins/**/*";
+
+// 4. Import UIkit
+@import "./uikit/components";
+
 /** Import theme styles */
-@import "common/global";
-@import "components/buttons";
-@import "components/comments";
-@import "components/forms";
-@import "components/wp-classes";
-@import "layouts/header";
-@import "layouts/sidebar";
-@import "layouts/footer";
-@import "layouts/pages";
-@import "layouts/posts";
-@import "layouts/tinymce";
+@import "./common/**/*";
+@import "./components/**/*";
+@import "./layouts/**/*";
