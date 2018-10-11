@@ -13,6 +13,13 @@ import aboutUs from './routes/about';
 // Import UIkit
 import UIkit from 'uikit' // eslint-disable-line
 
+// Import Vue.js
+import Vue from 'vue';
+
+new Vue({
+  el: '#app',
+});
+
 /** Populate Router instance with DOM routes */
 const routes = new Router({
   // All pages
