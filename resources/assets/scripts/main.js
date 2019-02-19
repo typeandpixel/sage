@@ -1,5 +1,5 @@
 // Import polyfills
-import "@babel/polyfill";
+import '@babel/polyfill';
 
 // import external dependencies
 import 'jquery';
