@@ -83,13 +83,13 @@ function sage_register_required_plugins() {
     array(
       'name'      => 'Advanced Custom Fields Pro',
       'slug'      => 'advanced-custom-fields-pro',
-      'source'    => 'https://plugins.typeandpixel.com.au/satispress/advanced-custom-fields-pro/5.7.1',
+      'source'    => 'https://plugins.typeandpixel.com.au/satispress/advanced-custom-fields-pro/latest',
       'required'  => true,
     ),
     array(
       'name'      => 'Gravity Forms',
       'slug'      => 'gravityforms',
-      'source'    => 'https://plugins.typeandpixel.com.au/satispress/gravityforms/2.2.5',
+      'source'    => 'https://plugins.typeandpixel.com.au/satispress/gravityforms/latest',
       'required'  => true,
     ),
 
