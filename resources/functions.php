@@ -86,6 +86,7 @@ Container::getInstance()
     ->bindIf('config', function () {
         return new Config([
             'assets' => require dirname(__DIR__).'/config/assets.php',
+            'assets_parent' => require dirname(__DIR__).'/config/assets.php',
             'theme' => require dirname(__DIR__).'/config/theme.php',
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
