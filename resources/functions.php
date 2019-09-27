@@ -82,11 +82,11 @@ array_map(
     ['theme_file_path', 'theme_file_uri', 'parent_theme_file_path', 'parent_theme_file_uri'],
     array_fill(0, 4, 'dirname')
 );
-Container::getInstance()
-    ->bindIf('config', function () {
-        return new Config([
-            'assets' => require dirname(__DIR__).'/config/assets.php',
-            'theme' => require dirname(__DIR__).'/config/theme.php',
-            'view' => require dirname(__DIR__).'/config/view.php',
-        ]);
-    }, true);
+// Container::getInstance()
+//     ->bindIf('config', function () {
+//         return new Config([
+//             'assets' => require dirname(__DIR__).'/config/assets.php',
+//             'theme' => require dirname(__DIR__).'/config/theme.php',
+//             'view' => require dirname(__DIR__).'/config/view.php',
+//         ]);
+//     }, true);
